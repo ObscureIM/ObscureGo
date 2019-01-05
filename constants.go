@@ -8,7 +8,7 @@ package main
 const (
 	versionNest                 = "0.36"
 	urlCryptoCompareTRTL        = "https://min-api.cryptocompare.com/data/price?fsym=TRTL&tsyms=USD"
-	logFileFilename             = "TurtleCoin-Nest.log"
+	logFileFilename             = "Obsidian-Nest.log"
 	urlBlockExplorer            = "https://blocks.turtle.link/"
 	dbFilename                  = "settings.db"
 	numberTransactionsToDisplay = 20

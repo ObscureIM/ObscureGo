@@ -6,8 +6,8 @@
 package main
 
 import (
-	"TurtleCoin-Nest/turtlecoinwalletdrpcgo"
-	"TurtleCoin-Nest/walletdmanager"
+	"Obsidian-Nest/turtlecoinwalletdrpcgo"
+	"Obsidian-Nest/walletdmanager"
 	"encoding/csv"
 	"encoding/json"
 	"io"
@@ -78,7 +78,7 @@ func main() {
 			log.Fatal(err)
 		}
 		pathToHomeDir = usr.HomeDir
-		pathToAppFolder := pathToHomeDir + "/Library/Application Support/TurtleCoin-Nest"
+		pathToAppFolder := pathToHomeDir + "/Library/Application Support/Obsidian-Nest"
 		os.Mkdir(pathToAppFolder, os.ModePerm)
 		pathToDB = pathToAppFolder + "/" + pathToDB
 
