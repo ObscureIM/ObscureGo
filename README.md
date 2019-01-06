@@ -56,7 +56,7 @@ If you are on Windows or Linux, move your wallets (.wallet) and settings.db file
 
 ## Donations
 
-TRTLv3jzutiQwqHL3qFwsu5EVLWesxZr1AFQ4AuMR3SD56n3rkHDkwj79eKwvaiU1nYQWGydKoXM6fXyiiGKsPDnVCNXzNdusxx
+XSDFq1aCuu4TMzgUkVN7chFHKyAmNLYJhEg3DxKdtL67C9z3CS4sYLRHWqoCNmoLNuiq5xKb2F3Fr7GkbcCtWz8J3eG7Pxi44n
 
 ## Build - (for developers only)
 
@@ -78,9 +78,9 @@ TRTLv3jzutiQwqHL3qFwsu5EVLWesxZr1AFQ4AuMR3SD56n3rkHDkwj79eKwvaiU1nYQWGydKoXM6fXy
     ```
 4. Similarly add the following lines to `.profile` file, save the file and then execute the command `source .profile` in a terminal.
     ```
-    CGO_CXXFLAGS_ALLOW=".*" 
-    CGO_LDFLAGS_ALLOW=".*" 
-    CGO_CFLAGS_ALLOW=".*" 
+    CGO_CXXFLAGS_ALLOW=".*"
+    CGO_LDFLAGS_ALLOW=".*"
+    CGO_CFLAGS_ALLOW=".*"
     ```
 5. Follow the instructions present [here](https://github.com/therecipe/qt/wiki/Installation-on-Linux) till **Run the setup** to install Qt which is the most important binding required to build Nest.
 6. Type the following commands to clone the Nest wallet, install dependencies and build the wallet.

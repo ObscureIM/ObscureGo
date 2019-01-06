@@ -147,7 +147,7 @@ func SendTransaction(transferAddress string, transferAmountString string, transf
 		return "", errors.New("wallet and/or blockchain not fully synced yet")
 	}
 
-	if !strings.HasPrefix(transferAddress, "TRTL") || (len(transferAddress) != 99 && len(transferAddress) != 187) {
+	if !strings.HasPrefix(transferAddress, "XSDs") || (len(transferAddress) != 99 && len(transferAddress) != 187) {
 		return "", errors.New("address is invalid")
 	}
 
@@ -161,7 +161,7 @@ func SendTransaction(transferAddress string, transferAmountString string, transf
 	}
 
 	if transferAmount <= 0 {
-		return "", errors.New("amount of TRTL to be sent should be greater than 0")
+		return "", errors.New("amount of XSD to be sent should be greater than 0")
 	}
 
 	transferFee, err := strconv.ParseFloat(transferFeeString, 64) // transferFee is expressed in TRTL
@@ -366,9 +366,9 @@ func StartWalletd(walletPath string, walletPassword string, useRemoteNode bool, 
 	var turtleCoindCurrentSessionLogFile *os.File
 
 	if useRemoteNode {
-		cmdWalletd = exec.Command(pathToWalletd, "-w", pathToWallet, "-p", walletPassword, "-l", pathToLogWalletdCurrentSession, "--daemon-address", daemonAddress, "--daemon-port", daemonPort, "--log-level", walletdLogLevel, "--rpc-password", rpcPassword)
+		cmdWalletd = exec.Command(pathToWalletd, "-w", pathToWallet, "-p", walletPassword, "--daemon-address", daemonAddress, "--daemon-port", daemonPort, "--log-level", walletdLogLevel, "--rpc-password", rpcPassword)
 	} else {
-		cmdWalletd = exec.Command(pathToWalletd, "-w", pathToWallet, "-p", walletPassword, "-l", pathToLogWalletdCurrentSession, "--log-level", walletdLogLevel, "--rpc-password", rpcPassword)
+		cmdWalletd = exec.Command(pathToWalletd, "-w", pathToWallet, "-p", walletPassword, "--rpc-password", rpcPassword)
 	}
 	hideCmdWindowIfNeeded(cmdWalletd)
 
@@ -710,13 +710,13 @@ func CreateWallet(walletFilename string, walletPassword string, walletPasswordCo
 
 	if privateViewKey == "" && privateSpendKey == "" && mnemonicSeed == "" {
 		// generate new wallet
-		cmdWalletd = exec.Command(pathToWalletd, "-w", pathToWallet, "-p", walletPassword, "-l", pathToLogWalletdCurrentSession, "--log-level", walletdLogLevel, "-g")
+		cmdWalletd = exec.Command(pathToWalletd, "-w", pathToWallet, "-p", walletPassword, "-g")
 	} else if mnemonicSeed == "" {
 		// import wallet from private view and spend keys
-		cmdWalletd = exec.Command(pathToWalletd, "-w", pathToWallet, "-p", walletPassword, "--view-key", privateViewKey, "--spend-key", privateSpendKey, "-l", pathToLogWalletdCurrentSession, "--log-level", walletdLogLevel, "--scan-height", scanHeight, "-g")
+		cmdWalletd = exec.Command(pathToWalletd, "-w", pathToWallet, "-p", walletPassword, "--view-key", privateViewKey, "--spend-key", privateSpendKey, "--scan-height", scanHeight, "-g")
 	} else {
 		// import wallet from seed
-		cmdWalletd = exec.Command(pathToWalletd, "-w", pathToWallet, "-p", walletPassword, "--mnemonic-seed", mnemonicSeed, "-l", pathToLogWalletdCurrentSession, "--log-level", walletdLogLevel, "--scan-height", scanHeight, "-g")
+		cmdWalletd = exec.Command(pathToWalletd, "-w", pathToWallet, "-p", walletPassword, "--mnemonic-seed", mnemonicSeed, "--scan-height", scanHeight, "-g")
 	}
 
 	hideCmdWindowIfNeeded(cmdWalletd)
