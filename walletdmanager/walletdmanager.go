@@ -7,7 +7,7 @@
 package walletdmanager
 
 import (
-	"ObsidianGoWallet/turtlecoinwalletdrpcgo"
+	"ObsidianGo/turtlecoinwalletdrpcgo"
 	"bufio"
 	"io"
 	"math/rand"
