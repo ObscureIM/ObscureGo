@@ -24,7 +24,7 @@ ApplicationWindow {
     minimumWidth: windowWidth
     minimumHeight: minWindowHeight
     color: "#333333"
-    title: "Obsidian Go Wallet"
+    title: "Obsidian Wallet"
     visible: true
 
     Flickable{

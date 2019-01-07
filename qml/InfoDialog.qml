@@ -17,15 +17,15 @@ Dialog {
     standardButtons: StandardButton.Ok
     width: 900
 
-    property var addressDev: "TRTLv3jzutiQwqHL3qFwsu5EVLWesxZr1AFQ4AuMR3SD56n3rkHDkwj79eKwvaiU1nYQWGydKoXM6fXyiiGKsPDnVCNXzNdusxx"
-    property var websiteChat: "http://chat.turtlecoin.lol"
+    property var addressDev: "XSDFq1aCuu4TMzgUkVN7chFHKyAmNLYJhEg3DxKdtL67C9z3CS4sYLRHWqoCNmoLNuiq5xKb2F3Fr7GkbcCtWz8J3eG7Pxi44n"
+    property var websiteChat: "TELEGRAM"
     property var versionNest: ""
     property var newVersionNestAvailable: ""
     property var urlNewVersionNest: ""
 
     Text {
         id: textNest
-        text: "Nest"
+        text: "Obsidian Wallet"
         font.family: "Arial"
         font.pixelSize: 21
         font.bold: true
