@@ -6,7 +6,7 @@
 package main
 
 const (
-	versionNest                 = "0.22"
+	versionNest                 = "0.23"
 	urlCryptoCompareTRTL        = "https://min-api.cryptocompare.com/data/price?fsym=TRTL&tsyms=USD"
 	logFileFilename             = "ObsidianGo.log"
 	urlBlockExplorer            = "https://blocks.turtle.link/"
