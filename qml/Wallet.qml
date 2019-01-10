@@ -170,7 +170,7 @@ Rectangle {
             Text {
                 id: textLockedDescr
                 color: "#cfcfcf"
-                text: "Locked/Unconfirmed:"
+                text: "Unconfirmed:"
                 anchors.bottom: textLockedUnit.bottom
                 anchors.bottomMargin: 0
                 font.family: "Arial"
