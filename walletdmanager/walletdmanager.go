@@ -147,8 +147,8 @@ func SendTransaction(transferAddress string, transferAmountString string, transf
 		return "", errors.New("wallet and/or blockchain not fully synced yet")
 	}
 
-	if !strings.HasPrefix(transferAddress, "XSDs") || (len(transferAddress) != 99 && len(transferAddress) != 187) {
-		return "", errors.New("address is invalid")
+	if !strings.HasPrefix(transferAddress, "XSD") || (len(transferAddress) != 98 && len(transferAddress) != 186) {
+		return "", errors.New("address is invalid due to length")
 	}
 
 	if transferAddress == WalletAddress {
