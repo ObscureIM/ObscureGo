@@ -314,7 +314,7 @@ func getAndDisplayListTransactions(forceFullUpdate bool) {
 					amountString += "- "
 					amountString += strconv.FormatFloat(-amount, 'f', -1, 64)
 				}
-				amountString += " XSD (fee: " + strconv.FormatFloat(transfer.Fee, 'f', 2, 64) + ")"
+				amountString += " XSC (fee: " + strconv.FormatFloat(transfer.Fee, 'f', 2, 64) + ")"
 				confirmationsString := confirmationsStringRepresentation(transfer.Confirmations)
 				timeString := transfer.Timestamp.Format("2006-01-02 15:04:05")
 				transactionNumberString := strconv.Itoa(transactionNumber) + ")"
@@ -358,7 +358,7 @@ func transfer(transferAddress string, transferAmount string, transferPaymentID s
 	getAndDisplayBalances()
 	qmlBridge.ClearTransferAmount()
 	qmlBridge.FinishedSendingTransaction()
-	qmlBridge.DisplayPopup("XSDs sent successfully", 4000)
+	qmlBridge.DisplayPopup("XSCs sent successfully", 4000)
 }
 
 func optimizeWalletWithFusion() {
@@ -677,7 +677,7 @@ func getAndDisplayListRemoteNodes() {
 				} else {
 					nodeNameAndFee += humanize.FtoaWithDigits(feeAmount, 2)
 				}
-				nodeNameAndFee += " XSD)"
+				nodeNameAndFee += " XSC)"
 				qmlBridge.ChangeTextRemoteNode(theIndex, nodeNameAndFee)
 			}()
 		}

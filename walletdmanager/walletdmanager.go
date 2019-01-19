@@ -147,7 +147,7 @@ func SendTransaction(transferAddress string, transferAmountString string, transf
 		return "", errors.New("wallet and/or blockchain not fully synced yet")
 	}
 
-	if !strings.HasPrefix(transferAddress, "XSD") || (len(transferAddress) != 98 && len(transferAddress) != 186) {
+	if !strings.HasPrefix(transferAddress, "XSC") || (len(transferAddress) != 98 && len(transferAddress) != 186) {
 		return "", errors.New("address is invalid due to length")
 	}
 
@@ -161,7 +161,7 @@ func SendTransaction(transferAddress string, transferAmountString string, transf
 	}
 
 	if transferAmount <= 0 {
-		return "", errors.New("amount of XSD to be sent should be greater than 0")
+		return "", errors.New("amount of XSC to be sent should be greater than 0")
 	}
 
 	transferFee, err := strconv.ParseFloat(transferFeeString, 64) // transferFee is expressed in TRTL
