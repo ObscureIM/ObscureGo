@@ -158,7 +158,7 @@ func connectQMLToGOFunctions() {
 	})
 
 	qmlBridge.ConnectClickedButtonExplorer(func(transactionID string) {
-		url := urlBlockExplorer + "?hash=" + transactionID + "#blockchain_transaction"
+		url := urlBlockExplorer + "transaction.html" + "?hash=" + transactionID
 		successOpenBrowser := openBrowser(url)
 		if !successOpenBrowser {
 			log.Error("failure opening browser, url: " + url)
