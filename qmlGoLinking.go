@@ -6,7 +6,7 @@
 package main
 
 import (
-	"ObsidianGo/walletdmanager"
+	"ObscureGo/walletdmanager"
 
 	"github.com/atotto/clipboard"
 	_ "github.com/mattn/go-sqlite3"

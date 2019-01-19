@@ -6,10 +6,10 @@
 package main
 
 const (
-	versionNest                 = "0.29"
+	versionNest                 = "0.1"
 	urlCryptoCompareTRTL        = "https://min-api.cryptocompare.com/data/price?fsym=TRTL&tsyms=USD"
-	logFileFilename             = "ObsidianGo.log"
-	urlBlockExplorer            = "https://obsidianprotocol.github.io/block-explorer/"
+	logFileFilename             = "Obscure.log"
+	urlBlockExplorer            = "https://obscureim.github.io/block-explorer/"
 	dbFilename                  = "settings.db"
 	numberTransactionsToDisplay = 20
 

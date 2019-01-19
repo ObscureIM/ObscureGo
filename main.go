@@ -6,8 +6,8 @@
 package main
 
 import (
-	"ObsidianGo/turtlecoinwalletdrpcgo"
-	"ObsidianGo/walletdmanager"
+	"ObscureGo/turtlecoinwalletdrpcgo"
+	"ObscureGo/walletdmanager"
 	"encoding/csv"
 	"encoding/json"
 	"io"
@@ -78,7 +78,7 @@ func main() {
 			log.Fatal(err)
 		}
 		pathToHomeDir = usr.HomeDir
-		pathToAppFolder := pathToHomeDir + "/Library/Application Support/ObsidianGo"
+		pathToAppFolder := pathToHomeDir + "/Library/Application Support/ObscureGo"
 		os.Mkdir(pathToAppFolder, os.ModePerm)
 		pathToDB = pathToAppFolder + "/" + pathToDB
 

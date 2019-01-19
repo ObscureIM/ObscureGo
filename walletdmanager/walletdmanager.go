@@ -7,7 +7,7 @@
 package walletdmanager
 
 import (
-	"ObsidianGo/turtlecoinwalletdrpcgo"
+	"ObscureGo/turtlecoinwalletdrpcgo"
 	"bufio"
 	"io"
 	"math/rand"
@@ -329,7 +329,7 @@ func StartWalletd(walletPath string, walletPassword string, useRemoteNode bool, 
 			log.Fatal("error finding home directory. Error: ", err)
 		}
 		pathToHomeDir := usr.HomeDir
-		pathToAppLibDir := pathToHomeDir + "/Library/Application Support/ObsidianGoWallet"
+		pathToAppLibDir := pathToHomeDir + "/Library/Application Support/ObscureGoWallet"
 
 		pathToLogWalletdCurrentSession = pathToAppLibDir + "/" + pathToLogWalletdCurrentSession
 		pathToLogWalletdAllSessions = pathToAppLibDir + "/" + pathToLogWalletdAllSessions
@@ -675,7 +675,7 @@ func CreateWallet(walletFilename string, walletPassword string, walletPasswordCo
 			log.Fatal("error finding home directory. Error: ", err)
 		}
 		pathToHomeDir := usr.HomeDir
-		pathToAppLibDir := pathToHomeDir + "/Library/Application Support/ObsidianGoWallet"
+		pathToAppLibDir := pathToHomeDir + "/Library/Application Support/ObscureGoWallet"
 
 		pathToLogWalletdCurrentSession = pathToAppLibDir + "/" + pathToLogWalletdCurrentSession
 		pathToLogWalletdAllSessions = pathToAppLibDir + "/" + pathToLogWalletdAllSessions

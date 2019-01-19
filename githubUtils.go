@@ -14,7 +14,7 @@ type release struct {
 	URL     string `json:"html_url"`
 }
 
-const url = "https://api.github.com/repos/ObsidianProtocol/ObsidianGo/releases/latest"
+const url = "https://api.github.com/repos/ObsucreIM/ObscureGo/releases/latest"
 
 func checkIfNewReleaseAvailableOnGithub(currentVersion string) (newVersion string, urlNewVersion string) {
 
