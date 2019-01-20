@@ -6,7 +6,7 @@
 package main
 
 const (
-	versionNest                 = "0.1"
+	versionNest                 = "0.30"
 	urlCryptoCompareTRTL        = "https://min-api.cryptocompare.com/data/price?fsym=TRTL&tsyms=USD"
 	logFileFilename             = "Obscure.log"
 	urlBlockExplorer            = "https://obscureim.github.io/block-explorer/"
