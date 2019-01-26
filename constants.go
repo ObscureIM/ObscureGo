@@ -9,7 +9,7 @@ const (
 	versionNest                 = "0.30"
 	urlCryptoCompareTRTL        = "https://min-api.cryptocompare.com/data/price?fsym=TRTL&tsyms=USD"
 	logFileFilename             = "Obscure.log"
-	urlBlockExplorer            = "https://obscureim.github.io/block-explorer/"
+	urlBlockExplorer            = "https://explore.obscure.im"
 	dbFilename                  = "settings.db"
 	numberTransactionsToDisplay = 20
 
