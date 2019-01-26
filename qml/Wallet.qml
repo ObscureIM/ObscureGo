@@ -1172,7 +1172,7 @@ Rectangle {
         Connections{
             target: QmlBridge
             onDisplayPopup: {
-                timerPopupText.interval = time
+                timerPopupText.interval = ""
                 popupText.show(text)
             }
         }
