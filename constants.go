@@ -6,7 +6,7 @@
 package main
 
 const (
-	versionNest                 = "0.32"
+	versionNest                 = "0.33"
 	urlCryptoCompareTRTL        = "https://obscure.im"
 	logFileFilename             = "Obscure.log"
 	urlBlockExplorer            = "https://explore.obscure.im"

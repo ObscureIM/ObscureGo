@@ -17,8 +17,8 @@ Dialog {
     standardButtons: StandardButton.Ok
     width: 900
 
-    property var addressDev: "XSDFq1aCuu4TMzgUkVN7chFHKyAmNLYJhEg3DxKdtL67C9z3CS4sYLRHWqoCNmoLNuiq5xKb2F3Fr7GkbcCtWz8J3eG7Pxi44n"
-    property var websiteChat: "TELEGRAM"
+    property var addressDev: "XSC1M7wZ1JSDKiXPHqW5fT1B5ADS7UsLtHwtmPtcRPrfMFEdPqt3obP4gj35WbYgadbj5oyckJCq4ExigNmTyNvA1EzxaMUo3W"
+    property var websiteChat: "DISCORD"
     property var versionNest: ""
     property var newVersionNestAvailable: ""
     property var urlNewVersionNest: ""
