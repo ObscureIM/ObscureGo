@@ -6,7 +6,7 @@
 package main
 
 const (
-	versionNest                 = "0.33"
+	versionNest                 = "0.34"
 	urlCryptoCompareTRTL        = "https://obscure.im"
 	logFileFilename             = "Obscure.log"
 	urlBlockExplorer            = "https://explore.obscure.im"
@@ -16,6 +16,6 @@ const (
 	// default remote node
 	defaultRemoteDaemonAddress = "209.97.174.174"
 	defaultRemoteDaemonPort    = "11898"
-	defaultRemoteDaemonName    = "HOME"
+	defaultRemoteDaemonName    = "Official Node 1"
 	defaultRemoteDaemonSSL     = false
 )
