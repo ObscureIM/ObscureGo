@@ -8,14 +8,14 @@ package main
 const (
 	versionNest                 = "0.35"
 	urlCryptoCompareTRTL        = "https://obscure.im"
-	logFileFilename             = "Obscure.log"
+	logFileFilename             = "ObscureGo.log"
 	urlBlockExplorer            = "https://explore.obscure.im"
 	dbFilename                  = "settings.db"
 	numberTransactionsToDisplay = 20
 
 	// default remote node
 	defaultRemoteDaemonAddress = "209.97.174.174"
-	defaultRemoteDaemonPort    = "11898"
+	defaultRemoteDaemonPort    = "12001"
 	defaultRemoteDaemonName    = "Official Node 1"
 	defaultRemoteDaemonSSL     = false
 )
