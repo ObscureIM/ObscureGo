@@ -186,7 +186,7 @@ TurtleCoin addresses are strings of 99 characters (187 for integrated addresses)
 - in walletdmanager/walletdmanager.go, change the "99" and "187" by the sizes of your addresses and integrated addresses respectively:
 
     ```Go
-    if !strings.HasPrefix(transferAddress, "TRTL") || (len(transferAddress) != 99 && len(transferAddress) != 187) {
+    if !strings.HasPrefix(transferAddress, "TRTL") || (len(transferAddress) != 98 && len(transferAddress) != 187) {
         return "", errors.New("address is invalid")
     }
     ```
@@ -195,7 +195,7 @@ TurtleCoin addresses are strings of 99 characters (187 for integrated addresses)
 
     ```Go
     /* Disable payment ID input if integrated address */
-    textInputTransferPaymentID.enabled = textInputTransferAddress.text.length != 187
+    textInputTransferPaymentID.enabled = textInputTransferAddress.text.length != 186
     ```
 
 ### Decimal point
