@@ -22,7 +22,7 @@ type nodeFeeInfo struct {
 	Amount  float64 `json:"amount"`
 }
 
-const urlTurtleCoinRemoteNodes = "https://raw.githubusercontent.com/ObscureIM/obscure-nodes-json/master/obscure-nodes.json#"
+const urlTurtleCoinRemoteNodes = "https://raw.githubusercontent.com/ObscureIM/obscure-nodes-json/master/obscure-nodes2.json#"
 const apiPointFee = "/fee"
 const apiPointFee2 = "/feeinfo"
 
